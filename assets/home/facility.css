@@ -72,3 +72,34 @@
   color: var(--light-grey);
 }
 
+
+@media screen and (max-width: 1110px) {
+  .facility-cards {
+    flex-direction: column;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) { 
+  .facility-intro {
+    padding: 3rem;
+  }
+  .facility-intro p {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .facility-intro {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .facility-card {
+    padding: 1.75rem;
+    width: 80%;
+    margin: 40px auto;
+  }
+}
+

@@ -1,0 +1,67 @@
+.quality {
+  background-image: url(desktop/bg-quality.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 5rem;
+  margin-top: 4rem;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.quality div {
+  margin-bottom: 5rem;
+}
+
+.quality-title {
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.quality-img {
+  height: 26rem;
+  max-width: 100%;
+  border-radius: 0.5rem;
+  margin-top: -9rem;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1140px) {
+  .quality {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-img {
+    order: 1;
+    margin: -9rem auto 4rem;
+  }
+
+  .quality div {
+    order: 2;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 798px) {
+  .quality-img {
+    height: 20rem;
+  }
+
+  .quality {
+    padding: 5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .quality {
+    padding: 5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .quality-title {
+    font-size: 1.7rem;
+  }
+}
