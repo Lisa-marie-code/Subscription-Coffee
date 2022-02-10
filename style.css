@@ -214,8 +214,6 @@ li {
   }
 
   
-  
-  
 /* ****************** ABOUT PAGE ************************ */
 /* ------------------ about-intro --------------------- */
 .intro-p {
@@ -248,9 +246,6 @@ li {
     max-width: 45ch;
   }
   
-  
-
-
 
 /*--------------This style is for the class name "commitment" in that div on about.html --------------------------*/
 .commitment {
@@ -279,7 +274,6 @@ li {
   color: var(--darker-cyan);
   margin-bottom: 2.5rem;
 }
-
 
 
 /*--------------This style is for the class name "qaulity" in that div on about.html --------------------------*/
@@ -311,7 +305,6 @@ li {
   margin-top: -9rem;
   margin-left: auto;
 }
-
 
 
 /*--------------This style is for the class name "headquarters" in that div on about.html --------------------------*/
@@ -356,11 +349,6 @@ li {
 .headquarter h3 {
   margin-bottom: 1.5rem;
 }
-
-
-
-
-
   
 /*------------------ FOOTER -----------------------*/
 .footer-dn {
