@@ -244,65 +244,10 @@
         <span id="type-text">Decaf</span> type of bean. <span id=quantity-text>250g</span> ground ala<span id="grind-options-text">&#8201;Cafetiére</span>, sent to me <span id="deliveries-text">Every Week</span>."
       </h3>
     </div>
-    <div class="center plan-btn">
-      <button id="open-popup">
-        Order Summary
-      </button>
-    </div>
+  
+    <a href="#modal-bg" id="show" class="btn" onClick="getInfo()">Create my plan!</a>
     
-    <a href="" class="btn plan-btn">Create my plan!</a>
     <!-- End of order summary section-->
-
-
-
-    <div class="popup center plan-btn">
-      <div class="icon">
-        <i class="fa fa-check"></i>
-      </div> -->
-      <div class="title">
-        <h4>Order Summary</h4>
-      </div>
-      <div class="description">
-        <h3>
-          "I drink my cofee <span id="using-or-as">as</span> <span id="preferences-text">Filter</span>, with a
-          <span id="type-text">Decaf</span> type of bean. <span id=quantity-text>250g</span> ground ala<span id="grind-options-text">&#8201;Cafetiére</span>, sent to me <span id="deliveries-text">Every Week</span>."
-        </h3>
-        <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout</p>
-        
-      </div>
-      <div class="dismiss-btn">
-        <h2>$14.00/mo</h2>
-        <button id="dismiss-popup">Checkout</button>
-      </div>
-    </div>
-
-
-
-    
-
-
-    <!-- <dialog> 
-      <p>This is an HTML dialog! Click the button to close it.</p> 
-      <button id="close">Close Dialog</button> 
-    </dialog> 
-    <button id="show " class="plan-btn">Show Me the Dialog!</button> 
-    <script> /* Thanks to Eiji Kitamura for the dialog demo which you can see at
-     https://demo.agektmr.com/dialog/ */ 
-     var dialog = document.querySelector('dialog'); 
-     document.querySelector('#show').onclick = function() { 
-       dialog.show(); 
-      }; 
-     document.querySelector('#close').onclick = function() { 
-       dialog.close(); 
-      }; 
-    </script> -->
-    
-
-
-
-
-
-
 
   </div>  
   <!--Origially End of section to be completed
@@ -342,13 +287,36 @@
   <script src="assets/plan/plan.js"></script>
   <script src="app.js"></script>
   <script src="assets/hamburger.js"></script>
-  <script src="assets/plan/order.js"></script>
-
+  
+  
+  <!-- End Footer -->
+  <dialog id="modal-bg">
+    <div class="modal-bg">
+      <div class="modal">
+          <div class="modal-title">
+              <h1>Order Summary</h1>
+          </div>
+          <div class="modal-summary">
+              <div class="modal-text">
+                  <h3 class="toRead">
+                      <!-- "I drink my cofee <span id="using-or-as">as</span> <span id="preferences-text">Filter</span>, with a
+                      <span id="type-text">Decaf</span> type of bean. <span id=quantity-text>250g</span> ground ala<span id="grind-options-text">&#8201;Cafetiére</span>, sent to me <span id="deliveries-text">Every Week</span>." -->
+                  </h3>
+                  <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout</p>              
+              </div>
+              <div class="modal-lowerpart">
+                  <h2><span id=quantity-text>/month</h2>    
+                  <a href="plan.html" class="btn plan-btn"><h2>Checkout</h2></a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </dialog>
 
   <!-- This is for the dialog box that will show at end -->
-  <!-- <script type="text/JavaScript">
+  <script type="text/JavaScript">
     (function() { 
-      var dialog = document.getElementById('box'); 
+      var dialog = document.getElementById('modal-bg'); 
       document.getElementById('show').onclick = function() { 
         dialog.show(); 
       }; 
@@ -356,9 +324,12 @@
         dialog.close(); 
       }; 
   })();
-  </script> -->
-  
-  <!-- End Footer -->
+  </script>
+
+
+
+<script src="./try.js"></script>
+
 </body>
 
 </html>
