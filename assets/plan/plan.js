@@ -92,6 +92,7 @@ for (let i = 0; i < deliveries.length; i++) {
 
 
 
+
 // document.getElementById("open-popup").addEventListener("click", function(){
 //     document.getElementsByClassName("popup")[0].classList.add("active");
 // });

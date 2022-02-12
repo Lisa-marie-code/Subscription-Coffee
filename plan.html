@@ -240,7 +240,7 @@
     <div class="order-summary">
       <h4>ORDER SUMMARY</h4>
       <h3 id="selected-pref">
-        "I drink my cofee <span id="using-or-as">as</span> <span id="preferences-text">Filter</span>, with a
+        "I drink my cofee <content id="using-or-as">as</content> <span id="preferences-text">Filter</span>, with a
         <span id="type-text">Decaf</span> type of bean. <span id=quantity-text>250g</span> ground ala<span id="grind-options-text">&#8201;Cafetiére</span>, sent to me <span id="deliveries-text">Every Week</span>."
       </h3>
     </div>
@@ -303,7 +303,7 @@
                   <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout</p>              
               </div>
               <div class="modal-lowerpart">
-                  <h2><span id=quantity-text>/month</h2>    
+                  <h2><span id=quantity-text>/mon</h2>    
                   <a href="plan.html" class="btn plan-btn"><h2>Checkout</h2></a>
               </div>
           </div>
@@ -324,19 +324,14 @@
       const selected = document.querySelector('#selected-pref').innerHTML;
 
       console.log(selected)
-      document.querySelector('.preference').innerHTML = `<p>${selected}`;
+      document.querySelector('.preference').innerHTML = `${selected}`;
       dialog.show();
-
-      
+   
   })
   document.getElementById('hide').onclick = function() { 
         dialog.close(); 
       }; 
   </script>
-
-
-
-<script src="./try.js"></script>
 
 </body>
 
