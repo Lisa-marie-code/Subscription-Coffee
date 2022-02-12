@@ -30,9 +30,9 @@
 }
 
 .links a:hover {
-  padding: 0.7rem 1.5rem;
-  color: var(--darker-cyan);
-  background-color: var(--coffee-brown);
+  
+  color: #333D4B
+  
 }
 
 .hamburger {
