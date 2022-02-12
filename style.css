@@ -23,6 +23,8 @@ html {
 
 html,body {
   max-width: 100%;
+  /* color */
+  background-color: #FEFCF7;
 }
 
 body {
@@ -164,11 +166,19 @@ li {
     body {
       padding: 0 2.5rem;
     }
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
+    }
   }
 
   @media screen and (max-width: 720px) {
     body {
       padding: 0 1.5rem;
+    }
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
     }
   }
 
@@ -176,5 +186,15 @@ li {
     body, nav {
       padding: 0 0.75rem;
     }
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
+    }
   } 
+  @media screen and (max-width:1000px){
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
+    }
+  }
 
