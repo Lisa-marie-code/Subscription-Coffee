@@ -148,31 +148,33 @@ ul li:last-child .order-step::after {
   justify-self: right;
   width: auto;
 }
- .order-cards:hover{
-  border: 1px solid rgb(85, 84, 84);
-  /* padding: 10px; */
-  border-radius: 10px;
-  border-style: groove;
 
-  /* border-radius: 50%; */
+.preference h4 {
+  color: var(--grey);
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
-/* .side-bar li a:hover {
-  background-color: aqua;
-  color: black;
+
+.preference h3 {
+  color: white;
+  line-height: 1.6rem;
 }
-.order-step a:active{
-  background-color: aqua;
-} */
 
-/* .order ul li.active{
-  background-color: aqua;
-  transition: 0.3 ease background-color;
+.preference span {
+  color: var(--cyan);
 }
-.order ul li.active a{
-   color: brown;
-} */
 
+#using-or-as {
+  color: white;
+}
 
+.plan-btn {
+  grid-column: 2;
+  justify-self: right;
+  width: auto;
+}
+
+ 
 @media screen and (max-width: 1144px) {
   .order {
     max-width: 750px;
