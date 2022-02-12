@@ -197,6 +197,14 @@ ul li:last-child .order-step::after {
     width: auto;
   }
 }
+.preference{
+  font-size: 19px;
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: px;
+  color: #83888F;;
+}
 @media screen and (max-width: 778px) {
 .preference{
   font-size: 15px;
