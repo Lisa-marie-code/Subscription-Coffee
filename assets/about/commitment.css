@@ -27,7 +27,6 @@
 
 @media screen and (max-width: 1000px) {
   .commitment {
-    display: flex;
     padding: 10rem 0;
     gap: 2.5rem;
   }
@@ -40,27 +39,17 @@
 
 @media screen and (max-width: 798px) {
   .commitment {
-    display: flex;
     grid-template-columns: 1fr;
     padding: 10rem 3rem;
   }
   
   .commitment-img {
-    
     background-image: url(mobile/image-commitment.jpg);
-    width: 281px;
-height: 470px;
-left: 39px;
-top: 663px;
+    height: 25rem;
   }
 
   .commitment-text {
     text-align: center;
-    
-width: 339px;
-height: 453px;
-left: 389px;
-top: 671px;
   }
 }
 
