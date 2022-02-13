@@ -23,6 +23,8 @@ html {
 
 html,body {
   max-width: 100%;
+  /* color */
+  background-color: #FEFCF7;
 }
 
 body {
@@ -55,8 +57,8 @@ p {
 }
 
 .btn:hover {
-  color: var(--darker-cyan);
-  background-color: var(--coffee-brown);
+  color: #FEFCF7;
+  background-color: #66D2CF;
 }
 
 a {
@@ -67,7 +69,9 @@ li {
   list-style: none;
 }
 
-
+.nav li :hover{
+  color: #333D4B;
+}
 @media screen and (max-width: 778px) {
   body {
     padding: 0 2.5rem;
@@ -187,11 +191,19 @@ li {
     body {
       padding: 0 2.5rem;
     }
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
+    }
   }
 
   @media screen and (max-width: 720px) {
     body {
       padding: 0 1.5rem;
+    }
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
     }
   }
 
@@ -199,5 +211,15 @@ li {
     body, nav {
       padding: 0 0.75rem;
     }
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
+    }
   } 
+  @media screen and (max-width:1000px){
+    .modal-bg{
+      width: 50%;
+  margin: 0 auto;
+    }
+  }
 
