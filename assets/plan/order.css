@@ -139,9 +139,9 @@ ul li:last-child .order-step::after {
   color: var(--cyan);
 }
 
-#using-or-as {
+/* #using-or-as {
   color: white;
-}
+} */
 
 .plan-btn {
   grid-column: 2;
@@ -149,6 +149,33 @@ ul li:last-child .order-step::after {
   width: auto;
 }
 
+.preference h4 {
+  color: var(--grey);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.preference h3 {
+  color: white;
+  line-height: 1.6rem;
+}
+
+.preference span {
+  color: var(--cyan);
+}
+
+/* #using-or-as {
+  color: white;
+  font-weight: lighter;
+} */
+
+.plan-btn {
+  grid-column: 2;
+  justify-self: right;
+  width: auto;
+}
+
+ 
 @media screen and (max-width: 1144px) {
   .order {
     max-width: 750px;
@@ -170,6 +197,38 @@ ul li:last-child .order-step::after {
     width: auto;
   }
 }
+.preference{
+  font-size: 19px;
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: px;
+  color: #83888F;;
+}
+@media screen and (max-width: 778px) {
+.preference{
+  font-size: 15px;
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: px;
+}
+.modal-text p{
+  font-size: 10px;
+}
+.modal-lowerpart{
+  font-size: 10px;
+  font-family: "Fraunces", serif;
+  color: var(--white);
+  background-color: var(--cyan);
+  padding: 0.1rem 0rem;
+  border-radius: 0.4rem;
+  transition: 0.3s;
+}
+
+}
+
+
 
 @media screen and (max-width: 707px) {
   .order-cards {

@@ -1,0 +1,61 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -3;
+}
+
+.menu {
+  position: absolute;
+  top: 5%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.35s ease-out;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.menu-expanded {
+  width: 180rem;
+  height: 180rem;
+  background-color: rgb(14, 135, 132, 0.7);
+}
+
+.hamburger-ul {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  list-style: none;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hamburger-links {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: inline-block;
+  margin: 1rem;
+  color: #fff;
+  border-radius: 0.4rem;  
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.blurred {
+  filter: blur(5px);
+  z-index: -1;
+}

@@ -1,20 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg" sizes="32x32" href="assets/favicon-32x32.png"/>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link ref="stylesheet" href="assets/home/intro.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800;900&family=PT+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
-  <title>Frontend Mentor | Coffeeroasters subscription site</title>
-</head>
-<body>
-    <!--This is navigation bar--->
+    <link rel="stylesheet" href="assets/about/about-intro.css">
+    <link rel="stylesheet" href="assets/nav.css">
+    <link rel="stylesheet" href="assets/hamburger.css">
+    <link rel="stylesheet" href="assets/footer.css">
+    <link rel="stylesheet" href="assets/about/commitment.css">
+    <link rel="stylesheet" href="assets/about/headquarters.css">
+    <link rel="stylesheet" href="assets/about/quality.css">
+
+    <title> Coffeeroasters subscription site</title>
+  </head>
+
+  <body>
     <nav id="nav">
       <div class="nav">
-        <img src="assets/shared/desktop/logo.svg" alt class="logo" />
+        <img src="assets/shared/desktop/logo.svg" alt="" class="logo" />
         <ul class="links">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT US</a></li>
@@ -24,10 +31,20 @@
       </div>
     </nav>
 
+    <div id="menu-container" class="menu-container">
+      <div id="menu" class="menu">
+      </div>
+    </div>
+    <ul class="hamburger-ul">
+      <li><a class="hamburger-links" id="first" href="index.html">HOME</a></li>
+      <li><a class="hamburger-links" id="second" href="about.html">ABOUT US</a></li>
+      <li><a class="hamburger-links" id="third" href="plan.html">CREATE YOUR PLAN</a></li>
+    </ul>
+
     <div class="intro-p">
-      <div class="intro">
+      <div class="intro-d">
         <h1 class="intro-title">About us</h1>
-        <p class="intro-p">
+        <p class="intro-para">
           Coffeeroasters began its journey of exotic discovery in 1999,
           highlighting stories of coffee from around the world. We have since
           been dedicated to bring the perfect cup - from bean to brew - in every
@@ -102,26 +119,38 @@
         <p class="address">Victoria</p>
         <p class="address">+61 4 9928 3629</p>
       </div>
-  </div>
+    </div>
 
+    <div class="footer-dn">
+      <div class="footer">
+        <img src="assets/shared/desktop/footer-logo.svg" alt="" />
+        <ul class="nav-links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="plan.html">CREATE YOUR PLAN</a></li>
+        </ul>
 
-<!-- footer -->
-
-<div class="footer-dn">
-  <div class="footer">
-    <div><img src="assets/shared/desktop/footer-log.svg" alt class="logo"></div>
-    <ul class="nav-links">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT US</a></li>
-      <li><a href="plan.html">CREATE YOUR PLAN</a></li>
-    </ul>
-    <ul class="nav-links">
-      <li><img src="assets/shared/desktop/icon-facebook.svg" alt class=""></li>
-      <li><img src="assets/shared/desktop/icon-instagram.svg" alt class=""></li>
-      <li><img src="assets/shared/desktop/icon-twitter.svg" alt class=""></li>
-    </ul>
-  </div>
-</div>
-</body>
-
+        <ul>
+          <li>
+            <a href=""
+              ><img src="assets/shared/desktop/icon-facebook.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="assets/shared/desktop/icon-twitter.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img src="assets/shared/desktop/icon-instagram.svg" alt=""
+            /></a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="assets/hamburger.js"></script>
+  </body>
 </html>

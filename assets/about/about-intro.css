@@ -1,0 +1,72 @@
+.intro-p {
+  background-image: url(desktop/image-hero-whitecup.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 7rem 5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+.intro-d {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-title {
+  color: var(--white);
+  max-width: 10ch;
+  font-size: 3.5rem;
+  line-height: 4rem;
+  margin-bottom: 2rem;
+}
+
+.intro-para {
+  color: var(--light-grey);
+  max-width: 45ch;
+}
+
+@media screen and (max-width: 940px) {
+  .intro-p {
+    background-image: url(tablet/image-hero-whitecup.jpg);
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .intro-title {
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .intro-p {
+    background-image: url(mobile/image-hero-whitecup.jpg);
+    padding: 5rem 3rem;
+    text-align: center;
+  }
+
+  .intro-d {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .intro-p {
+    margin-top: 91px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .intro-p {
+    padding: 4rem 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro-title {
+    font-size: 2.5rem;
+  }
+}
