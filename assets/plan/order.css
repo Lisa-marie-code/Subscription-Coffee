@@ -147,6 +147,29 @@ ul li:last-child .order-step::after {
   grid-column: 2;
   justify-self: right;
   width: auto;
+  pointer-events: none;
+}
+
+/* make the Create plan button active */
+.create_plan_active{
+  pointer-events: visible;
+  background-color: var(--cyan);
+}
+
+/* for checkout button */
+.checkout{
+  font-family: "Fraunces", serif;
+  color: var(--white);
+  background-color: var(--cyan);
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  transition: 0.3s
+}
+.btn-checkout{
+  grid-column: 2;
+  justify-self: right;
+  width: auto;
+  transition: 0.3s
 }
 
 .preference h4 {
