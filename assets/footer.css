@@ -23,21 +23,13 @@
   display: flex;
   justify-content: flex-start;
 }
-/* hover */
-.footer li :hover{
-  
-color: #FEFCF7
-}
+
 .footer a {
   color: var(--grey);
   font-weight: 600;
   text-align: center;
   display: inline-block;
 }
-.footer img :hover{
-  
-  color: #FDD6BA
-  }
 
 @media screen and (max-width: 985px) {
   .footer {
