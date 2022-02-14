@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800;900&family=PT+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   
-  
+  <link rel="stylesheet" href="assets/plan/popup.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="assets/nav.css" />
   <link rel="stylesheet" href="assets/hamburger.css" />
@@ -278,6 +278,51 @@
   Checkout -->
   <!-- End modal -->
 
+  <div id="modal-bg" class="modal-bg">
+    <div class="modal-box">
+        <div class="modal-title">
+            <h1>Order Summary</h1>
+        </div>
+        <div class="modal-summary">
+            <div class="modal-text">
+               <div class="preference"></div>
+                <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout</p>              
+            </div>
+            <div class="modal-lowerpart">
+                <h2>$<span id="price-per-month">0</span>/mon</h2>    
+                <a href="plan.html" class="checkout btn-checkout"><h2>Checkout</h2></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+
+    const button = document.querySelector('#show');
+    var dialog = document.getElementById('modal-bg');
+  
+  
+    button.addEventListener('click', ()=> {
+      console.log('clicked')
+  
+        const selected = document.querySelector('#selected-pref').innerHTML;
+  
+        console.log(selected)
+        document.querySelector('.preference').innerHTML = `${selected}`;
+        dialog.classList.add("bg-active");
+        
+    })
+    dialog.addEventListener("click", ()=>{
+          dialog.classList.remove("bg-active");
+        })
+    document.getElementById('hide').onclick = function() { 
+          dialog.classList.add("bg-hide"); 
+        };     
+    </script>
+
+
+
   <!-- Footer -->
   <div class="footer-dn">
     <div class="footer">
@@ -301,47 +346,10 @@
   
   
   <!-- End Footer -->
-  <dialog id="modal-bg">
-    <div class="modal-bg">
-      <div class="modal">
-          <div class="modal-title">
-              <h1>Order Summary</h1>
-          </div>
-          <div class="modal-summary">
-              <div class="modal-text">
-                 <div class="preference"></div>
-                  <p>Is this correct? You can proceed to checkout or go back to plan selection if something is off. Subscription discount codes can also be redeemed at the checkout</p>              
-              </div>
-              <div class="modal-lowerpart">
-                  <h2>$<span id="price-per-month">0</span>/mon</h2>    
-                  <a href="plan.html" class="checkout btn-checkout"><h2>Checkout</h2></a>
-              </div>
-          </div>
-      </div>
-    </div>
-  </dialog>
+  
 
   <!-- This is for the dialog box that will show at end -->
-  <script type="text/JavaScript">
-
-  const button = document.querySelector('#show');
-  var dialog = document.getElementById('modal-bg');
-
-
-  button.addEventListener('click', ()=> {
-    console.log('clicked')
-
-      const selected = document.querySelector('#selected-pref').innerHTML;
-
-      console.log(selected)
-      document.querySelector('.preference').innerHTML = `${selected}`;
-      dialog.show();
-   
-  })
-  document.getElementById('hide').onclick = function() { 
-        dialog.close(); 
-      }; 
-  </script>
+  
 
 </body>
 
