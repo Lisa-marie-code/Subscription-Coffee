@@ -22,7 +22,7 @@ let beanTypesClicked = false;
 let orderquantitiesClicked = false;
 let deliveriesClicked = false;
 
-
+let pricePerMouthNumber = 0;
 
 for (let i = 0; i < toggler.length; i++) {
   toggler[i].addEventListener("click", () => {
@@ -102,6 +102,7 @@ for (let i = 0; i < deliveries.length; i++) {
   });
 }
 
+// Added by Koffi
 function isElementClicked(){
   console.log(preferencesClicked ? "clicked" : "not");
   console.log(beanTypesClicked ? "clicked" : "not");
@@ -112,6 +113,39 @@ function isElementClicked(){
   }
 }
 setInterval(isElementClicked, 2000);
+
+// pop-up dialog added by Andrew
+document.getElementById("show").addEventListener('click', function(){
+  // price calculation
+  if(quantityText.innerHTML === "250g"){
+    if(deliveriesText.innerHTML === "Every week"){
+      pricePerMouthNumber = 7.20 * 4;
+    }else if(deliveriesText.innerHTML === "Every 2 weeks"){
+      pricePerMouthNumber = 9.60 * 2;
+    }else if(deliveriesText.innerHTML === "Every month"){
+      pricePerMouthNumber = 12.00;
+    }
+  }else if(quantityText.innerHTML === "500g"){
+    if(deliveriesText.innerHTML === "Every week"){
+      pricePerMouthNumber = 13.00 * 4;
+    }else if(deliveriesText.innerHTML === "Every 2 weeks"){
+      pricePerMouthNumber = 17.50 * 2;
+    }else if(deliveriesText.innerHTML === "Every month"){
+      pricePerMouthNumber = 22.00;
+    }
+  }else if(quantityText.innerHTML === "1000g"){
+    if(deliveriesText.innerHTML === "Every week"){
+      pricePerMouthNumber = 22.00 * 4;
+    }else if(deliveriesText.innerHTML === "Every 2 weeks"){
+      pricePerMouthNumber = 32.00 * 2;
+    }else if(deliveriesText.innerHTML === "Every month"){
+      pricePerMouthNumber = 42.00;
+    }
+  }
+  console.log(pricePerMouthNumber.toString());
+
+  document.getElementById("price-per-month").innerHTML = pricePerMouthNumber.toString();
+});          
 // document.getElementById("open-popup").addEventListener("click", function(){
 //     document.getElementsByClassName("popup")[0].classList.add("active");
 // });
