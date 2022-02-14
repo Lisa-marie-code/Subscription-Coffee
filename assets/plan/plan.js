@@ -17,6 +17,13 @@ const usingOrAs = document.getElementById("using-or-as"),
   grindOptionsText = document.getElementById("grind-options-text"),
   deliveriesText = document.getElementById("deliveries-text");
 
+let preferencesClicked = false;
+let beanTypesClicked = false;
+let orderquantitiesClicked = false;
+let deliveriesClicked = false;
+
+
+
 for (let i = 0; i < toggler.length; i++) {
   toggler[i].addEventListener("click", () => {
     toggler[i].classList.toggle("toggler-rotated");
@@ -46,6 +53,9 @@ for (let i = 0; i < preferences.length; i++) {
       grindToggler.style.pointerEvents = "all";
       grindOptionsText.style.display = "inline";
     }
+
+    preferencesClicked = true;
+    r = isElementClicked(preferencesClicked);
   });
 }
 
@@ -56,6 +66,7 @@ for (let i = 0; i < beanTypes.length; i++) {
     }
     beanTypes[i].classList.add("order-card-selected");
     typeText.innerText = i === 0 ? "Single Origin" : i === 1 ? "Decaf" : "Blended";
+    beanTypesClicked = true;
   });
 }
 
@@ -66,6 +77,7 @@ for (let i = 0; i < quantity.length; i++) {
     }
     quantity[i].classList.add("order-card-selected");
     quantityText.innerText = i === 0 ? "250g" : i === 1 ? "500g" : "1000g";
+    orderquantitiesClicked = true;
   });
 }
 
@@ -86,13 +98,20 @@ for (let i = 0; i < deliveries.length; i++) {
     }
     deliveries[i].classList.add("order-card-selected");
     deliveriesText.innerText = i === 0 ? "Every week" : i === 1 ? "Every 2 weeks" : "Every month";
+    deliveriesClicked = true;
   });
 }
 
-
-
-
-
+function isElementClicked(){
+  console.log(preferencesClicked ? "clicked" : "not");
+  console.log(beanTypesClicked ? "clicked" : "not");
+  console.log(orderquantitiesClicked ? "clicked" : "not");
+  console.log(deliveriesClicked ? "clicked" : "not");
+   if(preferencesClicked === true && beanTypesClicked === true && orderquantitiesClicked === true && deliveriesClicked === true){
+    document.getElementById("show").classList.add("create_plan_active");
+  }
+}
+setInterval(isElementClicked, 2000);
 // document.getElementById("open-popup").addEventListener("click", function(){
 //     document.getElementsByClassName("popup")[0].classList.add("active");
 // });

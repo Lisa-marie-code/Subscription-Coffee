@@ -50,7 +50,7 @@ p {
 .btn {
   font-family: "Fraunces", serif;
   color: var(--white);
-  background-color: var(--cyan);
+  background-color: var(--light-grey);
   padding: 1rem 2rem;
   border-radius: 0.4rem;
   transition: 0.3s;
