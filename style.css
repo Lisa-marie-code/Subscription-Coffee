@@ -55,11 +55,7 @@ p {
   border-radius: 0.4rem;
   transition: 0.3s;
 }
-.order-step span :hover{
-  mix-blend-mode: normal;
-opacity: 0.6;
 
-}
 .btn:hover {
   color: #FEFCF7;
   background-color: #66D2CF;

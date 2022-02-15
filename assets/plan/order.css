@@ -17,6 +17,17 @@
   font-size: 1.4rem;
   font-family: "Fraunces", serif;
 }
+.order-step span:hover{
+  font-weight: 900;
+color:#333D4B;
+font-family: Fraunces 9pt;
+
+
+}
+/* hovercolor */
+.order-card:hover{
+  background-color: #FDD6BA;
+}
 
 .order-step {
   position: relative;
