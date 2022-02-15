@@ -24,10 +24,29 @@ font-family: Fraunces 9pt;
 
 
 }
+
 /* hovercolor */
 .order-card:hover{
   background-color: #FDD6BA;
 }
+.order-card h3 {
+  margin-bottom: 1rem;
+  font-family: Fraunces 9pt;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.order-card p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px
+}
+
 
 .order-step {
   position: relative;
