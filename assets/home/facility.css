@@ -98,7 +98,7 @@
 @media screen and (max-width: 475px) {
   .facility-card {
     padding: 1.75rem;
-    width: 80%;
-    margin: 40px auto;
+    /* width: 80%;
+    margin: 40px auto; */
   }
 }

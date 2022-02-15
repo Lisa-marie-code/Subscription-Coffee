@@ -50,15 +50,15 @@ p {
 .btn {
   font-family: "Fraunces", serif;
   color: var(--white);
-  background-color: var(--light-grey);
+  background-color: #66D2CF;
   padding: 1rem 2rem;
   border-radius: 0.4rem;
   transition: 0.3s;
 }
 
 .btn:hover {
-  color: #FEFCF7;
-  background-color: #66D2CF;
+  color: #3d3b37;
+  background-color: var(--light-grey)
 }
 
 a {

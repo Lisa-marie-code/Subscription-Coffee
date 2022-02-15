@@ -45,8 +45,10 @@ for (let i = 0; i < preferences.length; i++) {
       preferencesText.innerText = "Capsule";
       grindOptionsText.style.display = "none";
     } else if (i === 1) {
+      usingOrAs.innerText = "as";
       preferencesText.innerText = "Filter";
     } else if (i === 2) {
+      usingOrAs.innerText = "as";
       preferencesText.innerText = "Espresso";
     }
     if (preferences[i] !== capsule) {
