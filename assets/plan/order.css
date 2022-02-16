@@ -219,6 +219,47 @@ ul li:last-child .order-step::after {
     justify-self: right;
     width: auto;
   }
+
+  /*Responsiveness for tablet*/
+
+  .order-summary {
+  
+    background-image: url(mobile/bg-order-summary.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    width: 768px;
+  }
+  
+  .order-summary h4 {
+    color: var(--grey);
+    height: 48px;
+    left: 10.37%;
+    right: 27.41%;
+    top: calc(50% - 48px/2 - 226.5px);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+  }
+  
+  .order-summary h3 {
+    color: white;
+    height: 160px;
+    left: 10.37%;
+    right: 10.37%;
+    top: calc(50% - 160px/2 - 25.5px);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+
+  
+  }
+  
+  .order-summary span {
+    color: var(--cyan);
+  }
 }
 
 
@@ -236,6 +277,37 @@ ul li:last-child .order-step::after {
   .plan-btn {
     margin: 0 auto;
   }
+
+  /*Responsiveness for mobile*/
+
+  .order-summary {
+    
+    background-image: url(mobile/bg-order-summary.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+
+    
+    width: 768px;
+    background: #FEFCF7;
+  }
+
+  .order-summary h4 {
+    color: var(--grey);
+    font-weight: 80;
+    margin-bottom: 1rem;
+  }
+
+  .order-summary h3 {
+    color: white;
+    line-height: 1.6rem;
+  }
+
+  .order-summary span {
+    color: var(--cyan);
+  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -253,6 +325,44 @@ ul li:last-child .order-step::after {
 @media screen and (max-width: 450px) {
   .order-option-title h1 {
     font-size: 1.5rem;
+  }
+
+  .order-summary {
+    
+    background-image: url(mobile/bg-order-summary.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    margin-bottom: 3rem;
+    width: 768px;
+
+  }
+
+  .order-summary h4 {
+    color: var(--grey);
+    height: 48px;
+    left: 10.37%;
+    right: 27.41%;
+    top: calc(50% - 48px/2 - 226.5px);
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+
+  }
+
+  .order-summary h3 {
+    color: white;
+    height: 160px;
+    left: 10.37%;
+    right: 10.37%;
+    top: calc(50% - 160px/2 - 25.5px);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .order-summary span {
+    color: var(--cyan);
   }
 }
 
