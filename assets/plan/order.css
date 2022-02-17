@@ -17,18 +17,10 @@
   font-size: 1.4rem;
   font-family: "Fraunces", serif;
 }
-.order-step span:hover{
-  font-weight: 900;
-color:#333D4B;
-font-family: Fraunces 9pt;
 
-
-}
 
 /* hovercolor */
-.order-card:hover{
-  background-color: #FDD6BA;
-}
+
 .order-card h3 {
   margin-bottom: 1rem;
   font-family: Fraunces 9pt;
@@ -47,7 +39,20 @@ font-family: Fraunces 9pt;
   line-height: 26px
 }
 
-
+/* hover query */
+@media screen  and (min-width: 900px) {
+    
+    .order-card:hover{
+      background-color: #FDD6BA;
+    }
+    .order-step span:hover{
+      font-weight: 900;
+    color:#333D4B;
+    font-family: Fraunces 9pt;
+    
+    
+    }
+  }
 .order-step {
   position: relative;
   display: inline-block;
