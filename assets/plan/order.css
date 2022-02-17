@@ -193,22 +193,6 @@ ul li:last-child .order-step::after {
   background-color: var(--cyan);
 }
 
-/* for checkout button */
-.checkout{
-  font-family: "Fraunces", serif;
-  color: var(--white);
-  background-color: var(--cyan);
-  padding: 1rem 2rem;
-  border-radius: 0.4rem;
-  transition: 0.3s
-}
-.btn-checkout{
-  grid-column: 2;
-  justify-self: right;
-  width: auto;
-  transition: 0.3s
-}
-
 .preference h4 {
   color: var(--grey);
   font-weight: 400;
@@ -302,6 +286,7 @@ ul li:last-child .order-step::after {
   top: 0;
   left: 0; 
   width: 100%;
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   display: flex;
@@ -319,10 +304,13 @@ ul li:last-child .order-step::after {
 
 
 .modal-box{
+  position: absolute;
   background-size: cover;
+  background-color: #FEFCF7;
   border-radius: 0.5rem;
-  width: 30%;
-  height: 70%;
+  align-self: center;
+  width: 540px;
+  height: 597px;
   display: flex;
   flex-direction: column;
 }
@@ -336,38 +324,109 @@ ul li:last-child .order-step::after {
   color: var(--white);
 }
 
-.modal-text h2 {
+/* .modal-text h2 {
   display: block;
   font-size: 1.1em;
   font-weight: bold;
   color: var(--grey)
-}
+} */
 
-.modal-text p{
+.modal-box p{
+  position: absolute;
+  font-size: 16px;
+  line-height: 26px;
+  width: 428px;
+  height: 78px;
+  opacity: 80%;
+  top: 360px;
+  left: 56px;
+}
+/* .modal-text p{
   padding-top: 1rem;
-}
+} */
 
-.modal-summary{
+/* .modal-summary{
   background-color: #FEFCF7;
   background-size: cover;
+} */
 
-}
-
-.modal-text{
+/* .modal-text{
   padding: 2rem 3rem;
-}
+} */
 
-.modal-lowerpart{
+/* .modal-lowerpart{
   padding: 2rem 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+} */
+
+.modal_price_and_button{
+  position: absolute;
+  width: 428px;
+  height: 56px;
+  top: 485px;
+  left: 56px;
 }
 
-.modal-lowerpart h2{
+.modal_price_and_button h2{
   color: var(--dark-grey);
-  padding: 0.5rem;
+  position: absolute;
+  width: 198px;
+  height: 36px;
+  top: 10px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+}
+
+/* .modal-lowerpart h2{
+  color: var(--dark-grey);
+  position: absolute;
+  height: 36px;
+  left: 0%;
+  right: 55.14%;
+  top: calc(50% - 36px/2);
+  font-weight: 900;
+  line-height: 36px;
+} */
+
+/* for checkout button */
+.checkout{
+  font-family: "Fraunces", serif;
+  color: var(--white);
+  background-color: var(--cyan);
+  position: absolute;
+  left: 49.3%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  border-radius: 0.4rem;
+  transition: 0.3s
+}
+
+.checkout_text{
+  position: absolute;
+  height: 25px;
+  left: 29.49%;
+  right: 29.49%;
+  top: calc(50% - 25px/2 - 0.05px);
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 25px;
+}
+
+.preference{
+  position: absolute;
+  width: 428px;
+  height: 160px;
+  top: 193px;
+  left: 56px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .plan-btn h2{
@@ -377,23 +436,356 @@ ul li:last-child .order-step::after {
   body {
     padding: 0 2.5rem;
   }
-  /* .modal-bg{
-    width: 90%;
-    height: 50px;
-  }  */
+  .modal-bg{
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+  } 
   /* .modal-bg h4{
     font-size: 10px;
   }
   .modal-title{
     font-size: 12px;
   }
-} */
+ */
+}
 @media screen and (max-width: 720px){
+
+  .modal-bg{
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    left: 0; 
+    width: 375px;
+    height: 1561px;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0, opacity 0.5;
+  }
+
+  .bg-active{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-box{
+    position: absolute;
+    background-color: #FEFCF7;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 0.5rem;
+    width: 327px;
+    height: 597px;
+    top: 35px;
+    left: 24px;
+  }
+
+  .modal-title h1{
+    position: absolute;
+    color: var(--white);
+    width: 235px;
+    height: 32px;
+    left: 7.34%;
+    right: 20.8%;
+    top: calc(50% - 32px/2);
+    font-weight: 900;
+    line-height: 32px;
+  }
+
+  .modal-title{
+    background-color: var(--dark-grey);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    width: 327px;
+    bottom: 85.26%;
+    height: 88px;
+  }
+
+  .modal-text{
+    position: absolute;
+    width: 327px;
+    top:calc(50% - 240px/2 - 50.5px);
+    bottom: 17.42%;
+
+  }
+
+  .modal_price_and_button{
+    position: absolute;
+    width: 279px;
+    height: 56px;
+    display: flex;
+    top: 500px;
+    left: 24px;
+    background-color: var(--cyan);
+    border-radius: 0.5em;
+    display: block;
+  }
+
+  /* .modal-summary{
+    background-color: #FEFCF7;
+    background-size: cover;
+    height: 509px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+   /* .modal-lowerpart{
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEFCF7;
+  } */
+
+  /* .modal-text p{
+    position: absolute;
+    width: 279px;
+    height: 125px;
+    opacity: 80%;
+    font-size: 15px;
+    line-height: 25px;
+    left: 7.34%;
+    right: 7.34%;
+    top: 61.64%;
+    bottom: 17.42%;
+  } */
+
+  .modal-box p{
+    position: absolute;
+    width: 279px;
+    height: 125px;
+    opacity: 80%;
+    font-size: 15px;
+    line-height: 25px;
+    left: 7.34%;
+    right: 7.34%;
+    top: 300px;
+    bottom: 17.42%;
+  }
+
+  /* .modal-text h2 {
+    position: absolute;
+    height: 240px;
+    width: 279px;
+    left: 7.34%;
+    right: 7.34%;
+    top: calc(50% - 240px/2 - 50.5px);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--grey)
+  } */
+
+  .modal-title h1{
+    position: absolute;
+    color: var(--white);
+    width: 235px;
+    height: 32px;
+    font-size: 28px;
+    left: 7.34%;
+    right: 20.8%;
+    top: calc(50% - 32px/2);
+    line-height: 32px;
+  }
+
+  .preference{
+    position: absolute;
+    height: 200px;
+    width: 279px;
+    font-size: 24px;
+    left: 7.34%;
+    right: 7.34%;
+    top: calc(50% - 240px/2 - 50.5px);
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+
+  .modal_price_and_button h2{
+    display: none;
+  }
+
+  .checkout{
+    width: 279px;
+    height: 56px;
+    left: 0%;
+  }
 
 }
 
 @media screen and (max-width: 500px) {
+  .modal-bg{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 375px;
+    z-index: 4;
+    height: 1561px;
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0, opacity 0.5;
+  }
 
+  .bg-active{
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-box{
+    position: absolute;
+    background-color: #FEFCF7;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    border-radius: 0.5rem;
+    width: 327px;
+    height: 597px;
+    top: 35px;
+    left: 24px;
+  }
+
+  .modal-title h1{
+    position: absolute;
+    color: var(--white);
+    width: 235px;
+    height: 32px;
+    left: 7.34%;
+    right: 20.8%;
+    top: calc(50% - 32px/2);
+    font-weight: 900;
+    line-height: 32px;
+  }
+
+  .modal-title{
+    background-color: var(--dark-grey);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    width: 327px;
+    bottom: 85.26%;
+    height: 88px;
+  }
+
+  .modal-text{
+    position: absolute;
+    width: 327px;
+    top:calc(50% - 240px/2 - 50.5px);
+    bottom: 17.42%;
+
+  }
+
+  .modal_price_and_button{
+    position: absolute;
+    width: 279px;
+    height: 56px;
+    display: flex;
+    top: 500px;
+    left: 24px;
+    background-color: var(--cyan);
+    border-radius: 0.5em;
+    display: block;
+  }
+
+  /* .modal-summary{
+    background-color: #FEFCF7;
+    background-size: cover;
+    height: 509px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+
+   /* .modal-lowerpart{
+    padding: 2rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEFCF7;
+  } */
+
+  /* .modal-text p{
+    position: absolute;
+    width: 279px;
+    height: 125px;
+    opacity: 80%;
+    font-size: 15px;
+    line-height: 25px;
+    left: 7.34%;
+    right: 7.34%;
+    top: 61.64%;
+    bottom: 17.42%;
+  } */
+
+  .modal-box p{
+    position: absolute;
+    width: 279px;
+    height: 125px;
+    opacity: 80%;
+    font-size: 15px;
+    line-height: 25px;
+    left: 7.34%;
+    right: 7.34%;
+    top: 300px;
+    bottom: 17.42%;
+  }
+
+  /* .modal-text h2 {
+    position: absolute;
+    height: 240px;
+    width: 279px;
+    left: 7.34%;
+    right: 7.34%;
+    top: calc(50% - 240px/2 - 50.5px);
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--grey)
+  } */
+
+  .modal-title h1{
+    position: absolute;
+    color: var(--white);
+    width: 235px;
+    height: 32px;
+    font-size: 28px;
+    left: 7.34%;
+    right: 20.8%;
+    top: calc(50% - 32px/2);
+    line-height: 32px;
+  }
+
+  .preference{
+    position: absolute;
+    height: 200px;
+    width: 279px;
+    font-size: 24px;
+    left: 7.34%;
+    right: 7.34%;
+    top: calc(50% - 240px/2 - 50.5px);
+    font-family: "Fraunces", serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+  }
+
+  
+
+  .checkout{
+    width: 279px;
+    height: 56px;
+    left: 0%;
+  }
+  .checkout_text::after{
+    content: " - ";
+  }
 }
 
 /* mobile reponsive */
@@ -404,8 +796,8 @@ ul li:last-child .order-step::after {
     padding: 0 2.5rem;
   }
   .modal-bg{
-    width: 50%;
-margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -414,8 +806,8 @@ margin: 0 auto;
     padding: 0 1.5rem;
   }
   .modal-bg{
-    width: 50%;
-margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -423,20 +815,14 @@ margin: 0 auto;
   body, nav {
     padding: 0 0.75rem;
   }
-  .modal-bg{
-    width: 50%;
-margin: 0 auto;
-  }
+  
 } 
 @media screen and (max-width:1000px){
   .modal-bg{
-    width: 50%;
-margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
   }
 }
-}
-
-
 
 .preference{
   font-size: 19px;
@@ -452,7 +838,7 @@ margin: 0 auto;
   font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
-  line-height: px;
+  line-height: 40px;
 }
 .modal-text p{
   font-size: 10px;
