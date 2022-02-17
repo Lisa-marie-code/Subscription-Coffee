@@ -281,6 +281,7 @@ ul li:last-child .order-step::after {
   top: 0;
   left: 0; 
   width: 100%;
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
   display: flex;
@@ -430,10 +431,11 @@ ul li:last-child .order-step::after {
   body {
     padding: 0 2.5rem;
   }
-  /* .modal-bg{
-    width: 90%;
-    height: 50px;
-  }  */
+  .modal-bg{
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+  } 
   /* .modal-bg h4{
     font-size: 10px;
   }
@@ -446,6 +448,7 @@ ul li:last-child .order-step::after {
 
   .modal-bg{
     position: fixed;
+    z-index: 4;
     top: 0;
     left: 0; 
     width: 375px;
@@ -617,6 +620,7 @@ ul li:last-child .order-step::after {
     top: 0;
     left: 0; 
     width: 375px;
+    z-index: 4;
     height: 1561px;
     background-color: rgba(0, 0, 0, 0.8);
     visibility: hidden;
@@ -767,18 +771,16 @@ ul li:last-child .order-step::after {
     line-height: 40px;
   }
 
-  .modal_price_and_button h2{
-    display: none;
-  }
+  
 
   .checkout{
     width: 279px;
     height: 56px;
     left: 0%;
   }
-  /* .checkout_text::after{
-    content:;
-  } */
+  .checkout_text::after{
+    content: " - ";
+  }
 }
 
 /* mobile reponsive */
@@ -789,7 +791,7 @@ ul li:last-child .order-step::after {
     padding: 0 2.5rem;
   }
   .modal-bg{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -799,7 +801,7 @@ ul li:last-child .order-step::after {
     padding: 0 1.5rem;
   }
   .modal-bg{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -812,7 +814,7 @@ ul li:last-child .order-step::after {
 } 
 @media screen and (max-width:1000px){
   .modal-bg{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
   }
 }
